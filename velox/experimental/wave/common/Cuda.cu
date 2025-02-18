@@ -282,7 +282,7 @@ void Stream::deviceConstantToHostAsync(
 namespace {
 struct CallbackData {
   CallbackData(std::function<void()> callback)
-      : callback(std::move(callback)){};
+      : callback(std::move(callback)) {};
   std::function<void()> callback;
 };
 
